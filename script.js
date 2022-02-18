@@ -1,5 +1,6 @@
   
 
+
 /* function adcionaTarefa(){ */
 
   //botao ok - registra o que foi escrito
@@ -21,34 +22,23 @@
   //limpar input do texto
   //https://cursos.alura.com.br/forum/topico-limpando-a-caixa-de-texto-20395
   inputText.value = "";
-  
-
-//botao que ao clicar fica cinza
-  criarElement.addEventListener("click", function(){
-    criarElement.style.backgroundColor = "rgb(128, 128, 128)";
-//se for clicado 1x, pintar de cinza
-//ao clicar 2x, pintar o selecionado e deixar o anterior em branco
-
-
-
-
-    if(criarElement.value === "rgb(128, 128, 128)"){
-        console.log("mantem");
-    }else{
-      
-    }
-
-
-  })
-
-  
-
 });
 
-/*  adcionaTarefa();
-} */
-
-//ao clicar na lista de tarefas criada, ficará cinza
+function clicarNoCinza (){
 
 
+//botao que ao clicar fica cinza
+//function selecionarTirarCinza()
+criarElement.addEventListener("click", function(){
+  let clickElement = document.getElementById("li");
+  clickElement.classList.toggle(hide);
+  criarElement.style.backgroundColor = "rgb(128, 128, 128)";
+});
+
+
+
+};
+
+
+  
 
