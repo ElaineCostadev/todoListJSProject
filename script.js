@@ -23,11 +23,7 @@
 
 
 
-  let elementSelected = document.createElement("selected");
-/*   criarElement.getElementsByClassName("selected")[0];
- */
-/*   criarElement.appendChild(elementSelected); */
-  
+  //Mentoria 
 
   criarElement.addEventListener("click", function(event){
    let classSelected = document.querySelector(".selected");
@@ -36,15 +32,22 @@
     classSelected.classList.remove("selected");
    }
   
-   event.target.classList.add("selected");
-
-
-
-
-
- 
+   event.target.classList.add("selected"); 
 
 });
+
+criarElement.addEventListener("dblclick", function(event){
+  let classCompleted = document.querySelector(".completed");
+  event.target.classList.add("completed");
+  if(classCompleted !== null){
+    classCompleted.classList.remove("completed");
+  }
+  
+
+console.log(classCompleted);
+
+});
+
 
 
 
