@@ -43,17 +43,50 @@ criarElement.addEventListener("dblclick", function(event){
     classCompleted.classList.remove("completed");
   }
   
-
-console.log(classCompleted);
-
 });
 
 
+/* function limpar (){ */
+
+
+
+  let btnLimpar = document.getElementById("apaga-tudo");
+      btnLimpar.addEventListener("click", function(event){
+        
+        
+        /* for(let index = 0; index < btnLimpar.length ; index +=1){ */
+        /*   console.log(btnLimpar); */
+          if(btnLimpar == criarElement){
+            event.target.value = "";
+            console.log(btnLimpar);
+          };
+      
+        });
+      
+
+      });
+
+/* criarElement.addEventListener("click", limpar()) */
+
+
+
+/* 
+  
+btnLimpar.addEventListener("click", function(event){
+    
+event.target.classList.reset();
+console.log(btnLimpar); */
+/* if(btnLimpar){
+  btnLimpar.classList.remove("li");
+} */
 
 
 
 
 
-});
+
+
+
+
 
 
